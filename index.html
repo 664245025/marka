@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8f6">
+  <meta name="description" content="ผลงานของพีรพัฒน์">
+  <title>Portfolio | พีรพัฒน์</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --page: #f7f8f6;
+      --surface: #ffffff;
+      --ink: #26332e;
+      --muted: #6d7973;
+      --line: #e2e7e3;
+      --accent: #4f7665;
+      --accent-soft: #edf3ef;
+      --radius: 12px;
+      font-family: "Segoe UI", "Noto Sans Thai", Tahoma, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--page); color: var(--ink); }
+    a { color: inherit; }
+    .topbar { background: var(--surface); border-bottom: 1px solid var(--line); }
+    .topbar-inner { width: min(1120px, calc(100% - 40px)); min-height: 64px; margin: auto; display: flex; align-items: center; justify-content: space-between; }
+    .brand { font-size: 18px; font-weight: 700; text-decoration: none; letter-spacing: .01em; }
+    .github-link { color: var(--muted); font-size: 14px; text-decoration: none; }
+    .github-link:hover { color: var(--accent); }
+    main { width: min(1120px, calc(100% - 40px)); margin: 54px auto 72px; }
+    .intro { display: grid; grid-template-columns: 76px 1fr; align-items: center; gap: 20px; padding-bottom: 38px; border-bottom: 1px solid var(--line); }
+    .avatar { width: 76px; height: 76px; border-radius: 50%; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); font-size: 30px; font-weight: 650; }
+    h1 { margin: 0 0 4px; font-size: clamp(25px, 4vw, 32px); line-height: 1.35; }
+    .handle { margin: 0; color: var(--muted); font-size: 15px; }
+    .bio { margin: 22px 0 0; color: var(--muted); line-height: 1.75; }
+    .profile-link { display: inline-flex; margin-top: 16px; color: var(--accent); font-size: 14px; font-weight: 600; text-decoration: none; }
+    .profile-link:hover { text-decoration: underline; }
+    .works { padding-top: 32px; }
+    .section-heading { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 18px; }
+    .section-heading h2 { margin: 0; font-size: 21px; }
+    .count { color: var(--muted); font-size: 14px; }
+    .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .card { min-height: 244px; display: flex; flex-direction: column; padding: 22px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+    .card-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+    .card h3 { margin: 0; font-size: 18px; font-weight: 650; line-height: 1.5; }
+    .badge { flex: none; padding: 4px 9px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-size: 12px; }
+    .description { margin: 12px 0 18px; color: var(--muted); font-size: 14px; line-height: 1.75; }
+    .tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: auto; }
+    .tag { padding: 4px 9px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); font-size: 12px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 18px; }
+    .button { min-height: 38px; display: inline-flex; align-items: center; justify-content: center; padding: 0 13px; border: 1px solid var(--accent); border-radius: 8px; background: var(--accent); color: white; font-size: 13px; font-weight: 600; text-decoration: none; transition: background .15s ease, border-color .15s ease; }
+    .button:hover { background: #3e6252; border-color: #3e6252; }
+    .button.secondary { background: var(--surface); color: var(--accent); }
+    .button.secondary:hover { background: var(--accent-soft); }
+    footer { padding: 20px; border-top: 1px solid var(--line); color: var(--muted); text-align: center; font-size: 13px; }
+    @media (max-width: 720px) { main { margin-top: 34px; } .cards { grid-template-columns: 1fr; } .card { min-height: 0; } }
+    @media (max-width: 480px) { .topbar-inner, main { width: calc(100% - 32px); } .intro { grid-template-columns: 60px 1fr; gap: 15px; padding-bottom: 28px; } .avatar { width: 60px; height: 60px; font-size: 24px; } .card { padding: 18px; } .card h3 { font-size: 16px; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#top">Portfolio</a>
+      <a class="github-link" href="https://github.com/664245025" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </div>
+  </header>
+  <main id="top">
+    <section class="intro" aria-label="ข้อมูลเจ้าของผลงาน">
+      <div class="avatar" aria-label="รูปแทนโปรไฟล์">พ</div>
+      <div><h1>พีรพัฒน์</h1><p class="handle">GitHub · 664245025</p></div>
+    </section>
+    <p class="bio">รวบรวมผลงานด้านการวิเคราะห์ข้อมูลและฐานข้อมูลกราฟ</p>
+    <a class="profile-link" href="https://github.com/664245025" target="_blank" rel="noreferrer">ดูโปรไฟล์ GitHub ↗</a>
+    <section class="works" aria-labelledby="works-title">
+      <div class="section-heading"><h2 id="works-title">ผลงาน</h2><span class="count">4 รายการ</span></div>
+      <div class="cards">
+        <article class="card">
+          <div class="card-header"><h3>งานที่ 1 · Lab Week 2: Transaction</h3><span class="badge">Notebook</span></div>
+          <p class="description">แล็บสัปดาห์ที่ 2 เรื่อง Transaction เปิดและรันได้บน Google Colab</p>
+          <div class="tags"><span class="tag">Jupyter Notebook</span></div>
+          <div class="actions"><a class="button" href="https://colab.research.google.com/drive/1L3Z_T8A0jQDgMQpxkSaHvIght9LcjdlB" target="_blank" rel="noreferrer">เปิดใน Colab ↗</a></div>
+        </article>
+        <article class="card">
+          <div class="card-header"><h3>งานที่ 2 · แนะนำมอเตอร์ไซค์ด้วย Graph</h3><span class="badge">Notebook</span></div>
+          <p class="description">สร้างกราฟผู้ใช้และมอเตอร์ไซค์ด้วย Python และ NetworkX เพื่อสำรวจความชอบและแนวทางแนะนำ</p>
+          <div class="tags"><span class="tag">Jupyter Notebook</span><span class="tag">NetworkX</span></div>
+          <div class="actions"><a class="button" href="https://colab.research.google.com/drive/1ZmBJEQh-4eOANw2rbN9O-rx08Qo6DiSQ?usp=sharing" target="_blank" rel="noreferrer">เปิดใน Colab ↗</a></div>
+        </article>
+        <article class="card">
+          <div class="card-header"><h3>งานที่ 3 · แนะนำมอเตอร์ไซค์ด้วย Neo4j</h3><span class="badge">Notebook</span></div>
+          <p class="description">วิเคราะห์ความสัมพันธ์และแนะนำมอเตอร์ไซค์ด้วยฐานข้อมูลกราฟ Neo4j บน Google Colab</p>
+          <div class="tags"><span class="tag">Jupyter Notebook</span><span class="tag">Neo4j</span></div>
+          <div class="actions"><a class="button" href="https://colab.research.google.com/drive/12YK3jnjWNXlemkG97EKQmmonLxFx8Cmi?usp=sharing" target="_blank" rel="noreferrer">เปิดใน Colab ↗</a></div>
+        </article>
+        <article class="card">
+          <div class="card-header"><h3>งานที่ 4 · ระบบชมรมด้วย Neo4j</h3><span class="badge">Neo4j</span></div>
+          <p class="description">ระบบจัดการนักศึกษา ชมรม ความสัมพันธ์ และคำสั่ง Cypher</p>
+          <div class="tags"><span class="tag">Neo4j</span><span class="tag">PDF</span><span class="tag">Streamlit</span></div>
+          <div class="actions">
+            <a class="button" href="https://mzvpqrmpmmrw4htsbjr7tt.streamlit.app/" target="_blank" rel="noreferrer">เปิดแอป ↗</a>
+            <a class="button secondary" href="664245025_club_system.pdf" target="_blank" rel="noreferrer">ดูเอกสาร PDF ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer>Portfolio · พีรพัฒน์</footer>
+</body>
+</html>
